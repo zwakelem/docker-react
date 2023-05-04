@@ -21,10 +21,10 @@ jobs:
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
           aws_secret_key: ${{ secrets.AWS_SECRET_KEY }}
-          application_name: docker #docker-gh
-          environment_name: docker-env #Dockergh-env
-          existing_bucket_name: elasticbeanstalk-us-east-2-856638991130
-          region: us-east-2
+          application_name: docker-react #docker-gh
+          environment_name: docker-react-env #Dockergh-env
+          existing_bucket_name: elasticbeanstalk-us-east-1-856638991130
+          region: us-east-1
           version_label: ${{ github.sha }}
           deployment_package: deploy.zip
           use_existing_version_if_available: true
